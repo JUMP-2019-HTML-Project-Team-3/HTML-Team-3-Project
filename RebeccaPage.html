@@ -42,6 +42,7 @@
       <!--Controls how certain elements look-->
       <!--Contains internal CSS properties and values-->
       <style>
+<<<<<<< HEAD
 
           .inline-center {
               text-align: center; 
@@ -84,6 +85,49 @@
     <img class = 'inline-image-center'src = 'http://storage.proboards.com/6157666/avatar/FmeitUEDZkRPHQSmUlFy.png' src = 'logo'>
     <hr>
 
+=======
+          .inline-center {
+              text-align: center; 
+          }
+
+          .inline-image-center {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+          }
+
+          table, th, td {
+              border: 1px solid black;
+          }  
+
+          th {
+              background-color:rebeccapurple;
+          }
+
+          td {
+              background-color:skyblue;
+          }
+      </style>
+      <!--Line 32 is an element with a beginning title tag and an end title tag-->
+      <title>Salki's Noms</title>
+  </head>
+  <body>
+    <!--Canvas can draw graphics on the fly using JavaScript-->
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;"></canvas>
+                
+      <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.font = "30px Georgia";
+      ctx.strokeText("Salki's Noms",10,50);
+      </script>
+    <!-- Uses unique id attributes given to elements to navigate between elements on the page-->
+    <a href="#menu">Go to menu</a>
+    <a href ="#review">Go to review</a>
+    <img class = 'inline-image-center'src = 'http://storage.proboards.com/6157666/avatar/FmeitUEDZkRPHQSmUlFy.png' src = 'logo'>
+    <hr>
+
+>>>>>>> b0f244452ad79ec98827c36d1a5c89ec9076bd6c
     <!--Paragraph style is centered because of internal CSS style element in Head section-->
     <p class = 'inline-center'>Come on down to Salki's Noms to get some food!</p>
 
