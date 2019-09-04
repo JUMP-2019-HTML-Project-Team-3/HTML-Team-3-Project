@@ -76,6 +76,13 @@
       var c = document.getElementById("myCanvas");
       var ctx = c.getContext("2d");
       ctx.font = "30px Georgia";
+      var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
+      gradient.addColorStop("0", "mediumturquoise");
+      gradient.addColorStop("0.5", "fuchsia");
+      gradient.addColorStop("1.0", "indigo");
+
+      // Fill with gradient
+      ctx.strokeStyle = gradient;
       ctx.strokeText("Salki's Noms",10,50);
       </script>
     <!-- Uses unique id attributes given to elements to navigate between elements on the page-->
@@ -104,28 +111,39 @@
             <tr>
               <th>Name</th>
               <th>Description</th> 
+              <th>Picture</th>
               <th>Price</th>
             </tr>
             <tr>
               <td>Cat Cookies</td>
               <td>Cat-shaped cookies with icing topping</td>
+              <td><img class = 'inline-image-center'  src = "http://www.simpleimageresizer.com/_uploads/photos/c69c74ec/bfb4bcf43269d70e3693016364e32029_150x106.jpg"></td>
               <td>$3.00 for 5</td>
             </tr>
             <tr>
               <td>Rainbow Waffles</td>
               <td>Stack of seven waffles in good ol' ROYGBIV</td>
+              <td><img class = 'inline-image-center'  src = "http://www.simpleimageresizer.com/_uploads/photos/c69c74ec/rainbowwaffle2_150x106.jpg"></td>
               <td>$5.00</td>
             </tr>
             <tr>
               <td>Mini Breakfast</td>
               <td>For when someone just wants a 'little' breakfast; bacon and eggs</td>
+              <td><img class = 'inline-image-center'  src = "http://www.simpleimageresizer.com/_uploads/photos/c69c74ec/maxresdefault_150x106.jpg"></td>
               <td>$3.00</td>
             </tr>
             <tr>
                 <td>Bear Sundae</td>
-                <td>Hot fudge sunday with oreo-cookie ears and a chocolate drizzle face</td>
-                <td>$9.00</td>
+                <td>Hot fudge sundae with oreo-cookie ears and a chocolate drizzle face</td>
+                <td><img class = 'inline-image-center'  src = "http://www.simpleimageresizer.com/_uploads/photos/c69c74ec/14420058567_a92682001c_z_150x106.jpg"></td>
+                <td>$7.50</td>
             </tr>
+            <tr>
+              <td>Pusheen Macarons</td>
+              <td>Limited Time Only: delicious macarons inspired by Pusheen!</td>
+              <td><img class = 'inline-image-center'  src = "http://www.simpleimageresizer.com/_uploads/photos/c69c74ec/9d116bb32549338fb7a6884d56ffb18a_150x106.jpg"></td>
+              <td>$10.00 for 12</td>
+          </tr>
           </table>
 
     <hr>
