@@ -3,24 +3,23 @@
 <!--Feature 6 Layout-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<!--Feature 9 Symbols-->
     <header>
-        <h2><b>Order Food</b></h2>
+        <h2><b>Order Food&copy</b></h2>
     </header>
     <body>
+
+        <aside>
         <p>
-        
         <form>
         Name:<br>
         <input type="text" name="firstname"><br>
         Deliver Latitude:<br>
-        <input type="text" name="latDeliv" id="latDelivid">
+        <input type="text" name="latDeliv" id="latDelivid"><br>
         Deliver Longitude:<br>
         <input type="text" name="longDeliv" id="longDelivid">
-        </form> 
+        </form>
 
-        <div id="demo">
-
-        </div>
         <!--Feature 7 SVG-->
         <!--Feature 8 OnClick Event-->
         <svg width="100" height="100" onclick="getLocation()">
@@ -28,40 +27,52 @@
             <text fill="red" font-size="16" font-family="Verdana" x="15" y="55">Location</text>
         </svg>
 
+        </aside>
+        <article>
             <!--Feature 4 Lists-->
             <!--Feature 1 Attributes-->
             <nav>
             <ul>
-                <li id="li1" onclick="addFood1">Food 1</li>
+                <li id="li1" onclick="addFood1()">Food 1</li>
                 <li id="li2">Food 2</li>
                 <li id="li3">Food 3</li>
             </ul>
         </nav>
         </p>
-        <article>
+        </article>
+
         <!--Feature 5 Iframe-->
-        <iframe scr="file:///D:/HTML/HTML-Team-3-Project/greg2.html" height="200" width="200"></iframe>
+        <p><iframe scr="file:///D:/HTML/HTML-Team-3-Project/greg2.html" height="200" width="200"></iframe></p>
         
+        
+        <footer>
         <!--Feature 2 Formating-->
         <p>
-        
-        Example of formatting text<del>deleted</del>
-        <sub>Subscripted text</sub>
-        <sup>Superscripted text</sup>
-    </p>
-    </article>
+            Example of formatting text<del>deleted</del>
+            <sub>Subscripted text</sub>
+            <sup>Superscripted text</sup>
+        </p>
+        </footer>
     </body>
 
     <!--Feature 3 CSS-->
 <style>
+footer{
+    text-align: center;
+    background-color: grey;
+}
+
 header{
     text-align: center;
 }
 
-nav{
+aside{
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
+    float: left;
+    width: 30%;
+    background-color: grey;
 }
 
 article{
@@ -69,13 +80,15 @@ article{
   -ms-flex: 3;
   flex: 3;
   background: grey;
+  float: right;
+  width: 70%;
 }
 ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: black;
+    background-color: rgb(214, 188, 188);
 }
 
 li{
@@ -122,6 +135,7 @@ li{
         long.value = position.coords.longitude;
         }
 
+        //Feature 10 Input Value Attribute
         function addFood1()
         {
             var tmp = document.getElementById("li1");
