@@ -1,0 +1,77 @@
+<!-- This the index, the home page for our Restaurant Site -->
+<!-- Feature 1: Headings (see below) -->
+<h1>Matty's Ice House</h1>
+<h2>Welcome to the Ice House</h2>
+<!-- Feature 2: Quotations (short quote below) -->
+<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+<!-- Feature 2: (block quote below) -->
+<p>Here is a quote from WWF's website:</p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 50 years, WWF has been protecting the future of nature.
+The world's leading conservation organization,
+WWF works in 100 countries and is supported by
+1.2 million members in the United States and
+close to 5 million globally.
+</blockquote>
+<!-- Feature 2: (abbreviations below) -->
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+<!-- Feature 2: (address below) -->
+<address>
+    Written by John Doe.<br> 
+    Visit us at:<br>
+    Example.com<br>
+    Box 564, Disneyland<br>
+    USA
+    </address>
+    <!-- Feature 2: (cite see below) -->
+    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+    <!-- Feature 2: (bi directional override see below) -->
+    <bdo dir="rtl">This text will be written from right to left</bdo>
+    <!-- Feature 3: Site Navigation and Links (see below)-->
+    <nav>
+        <ul>
+          <li><strong>Home</strong></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="clients.html">Our Clients</a></li>
+          <li><a href="products.html">Our Products</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <!-- Feature 3: Blocks (div element see below) -->
+      <div style="background-color:black;color:white;padding:20px;">
+        <h2>London</h2>
+        <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+      </div>
+      <!-- Feature 3:   (span element see below) -->
+      <h1>My <span style="color:red">Important</span> Heading</h1>
+      <!-- Feature 4: Script element (see below) -->
+      <script>
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        </script>
+        <!-- Feature 3: (Noscript see below) -->
+        <script>
+            document.getElementById("demo").innerHTML = "Hello JavaScript!";
+            </script>
+
+<!-- Feature 4: -->
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+            
+            <noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+            <p>JavaScript can change the content of an HTML element:</p>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="demo">This is a demonstration.</p>
+
+<!-- Feature 4: -->
+<script>
+function myFunction() { 
+  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+}
+</script>
