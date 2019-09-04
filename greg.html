@@ -1,13 +1,50 @@
 <!DOCTYPE html>
 <html>
+
+<!-- NavBar Start -->
+<head>
+        <style>
+        a:link {
+          color: white;
+          background-color: rgb(165, 23, 23);
+          text-decoration: none;
+        }
+        a:visited {
+          color: pink;
+          background-color: rgb(165, 23, 23);
+          text-decoration: none;
+        }
+        a:hover {
+          color: red;
+          background-color: rgb(165, 23, 23);
+          text-decoration: underline;
+        }
+        a:active {
+          color: yellow;
+          background-color: rgb(165, 23, 23);
+          text-decoration: underline;
+        }
+        </style>
+        </head>
+<div style="background-color:rgb(165, 23, 23);color:white;padding:20px;">
+    <nav>
+        <ul>
+        <h2><strong>Look at Our Restaurants!.com</strong><b>&emsp;</h2>    
+        <li><a href="Index.html"><strong>Home</strong></a><b>&emsp;</b>
+        <strong>Greg's Page</strong><b>&emsp;</b>
+        <a href="Omran_webpage.html"><strong>Chef Recipe</strong></a><b>&emsp;</b>
+        <a href="RebeccaPage.html"><strong>Salki's Noms Cafe</strong></a><b>&emsp;</b></li>
+        </ul>
+    </nav>
+</div>
+<!-- Nav bar end -->
+
 <!--Feature 6 Layout-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!--Feature 9 Symbols-->
-    <header>
-        <h2><b>Order Food&copy</b></h2>
-    </header>
     <body>
+        <h2><b>Order Food&copy</b></h2>
         <section>
         <aside>
         <p>
@@ -33,7 +70,7 @@
             <!--Feature 4 Lists-->
             <!--Feature 1 Attributes-->
             <nav>
-            <ul>
+            <ul id-="ul1">
                 <li id="li1" onclick="addFood1()">Food 1</li>
                 <li id="li2">Food 2</li>
                 <li id="li3">Food 3</li>
@@ -58,6 +95,10 @@
 
     <!--Feature 3 CSS-->
 <style>
+h2{
+    align-content: center;
+}
+
 section{
     display: -webkit-flex;
     display: flex;
@@ -89,15 +130,15 @@ article{
   float: right;
   width: 70%;
 }
-ul{
+
+#ul1{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(214, 188, 188);
 }
 
-li{
+#li1, #li2, #li3{
     display: block;
     text-align: center;
     padding: 14px 16px;
