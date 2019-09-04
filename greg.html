@@ -62,19 +62,26 @@
         <!--Feature 9 SVG-->
         <!--Feature 10 OnClick Event-->
         <svg width="100" height="100" onclick="getLocation()">
-            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-            <text fill="red" font-size="16" font-family="Verdana" x="15" y="55">Location</text>
+            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="lightblue" />
+            <text fill="yellow" font-size="16" font-family="Verdana" x="12" y="55">Location</text>
         </svg>
 
         </aside>
         <article>
             <!--Feature 4 Lists-->
             <!--Feature 1 Attributes-->
+            <!--Feature 2 Formating-->
             <nav>
             <ul id-="ul1">
-                <li id="li1" onclick="addFood1()">Food 1</li>
-                <li id="li2">Food 2</li>
-                <li id="li3">Food 3</li>
+                <li id="li1"><i>Pancakes </i><sub>$ 9.99</sub></li>
+                <li id="li2"><i>Bacon Egg Cheese </i><sub>$ 5.99</sub></li>
+                <li id="li3"><i>Omelete </i><sub>$ 9.99</sub></li>
+                <li id="li1"><i>Tacos </i><sub>$ 7.99</sub></li>
+                <li id="li2"><i><del>Burgers <sub>$ 12.99</sub></del></i></li>
+                <li id="li3"><i>Milkshakes </i><sub>$ 4.50</sub></li>
+                <li id="li1"><i>Buffalo Wings <sub>$ 10</sub></i></li>
+                <li id="li2"><i><del>Baked Ziti <sub>$ 8.99</sub></del></i></li>
+                <li id="li3"><i>Soda </i><sub>$ 1.25</sub></li>
             </ul>
         </nav>
         </p>
@@ -82,11 +89,8 @@
         
     </section>
         <footer>
-        <!--Feature 2 Formating-->
         <p>
-            This is the footer with some formatting <del>deleted</del>
-            <sub>Subscripted text</sub>
-            <sup>Superscripted text</sup>
+            Contact Us
         </p>
         </footer>
     </body>
@@ -94,7 +98,7 @@
 <!--Feature 3 CSS-->
 <style>
 h2{
-    align-content: center;
+    text-align: center;
 }
 
 section{
@@ -107,15 +111,14 @@ footer{
     background-color: grey;
 }
 
-header{
-    text-align: center;
-}
-
 aside{
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
+    -webkit-flex: 0;
+    -ms-flex: 0;
+    flex: 0;
     float: left;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
     width: 30%;
     background-color: grey;
 }
